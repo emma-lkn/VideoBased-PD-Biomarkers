@@ -3,7 +3,7 @@
 This repository contains the official implementation of our paper:  
 **[Interpretable and Granular Video-Based Quantification of Motor Characteristics from the Finger Tapping Test in Parkinson's Disease](https://doi.org/10.1038/s41531-026-01307-w).**
 
-Tahereh Zarrat Ehsan, Michael Tangermann, Yağmur Güçlütürk, Bastiaan R. Bloem, Luc J. W. Evers  
+Tahereh Zarrat Ehsan, Michael Tangermann, Yağmur Güçlütürk, S. Shin, K. C. Ho, Bastiaan R. Bloem, Luc J. W. Evers  
 Radboud University, Donders Institute for Brain, Cognition and Behaviour
 
 ---
@@ -186,6 +186,8 @@ If you use this repository in your research, please cite:
   year = {2026},
   doi = {10.1038/s41531-026-01307-w}
 }
+```
+
 ---
 
 ## 📜 License
