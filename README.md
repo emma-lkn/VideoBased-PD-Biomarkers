@@ -10,7 +10,7 @@ Radboud University, Donders Institute for Brain, Cognition and Behaviour
 
 
 <p align="center">
-  <img src="assets/ft.gif" width="60%" />
+  <img src="assets/FT.gif" width="60%" />
 </p>
 
 <p align="center">
