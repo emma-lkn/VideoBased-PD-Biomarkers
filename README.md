@@ -169,23 +169,22 @@ More details on the procedure can be found on the [project website](https://www.
 
 If you use this repository in your research, please cite:
 
-> Zarrat Ehsan T, Tangermann M, Güçlütürk Y, Bloem B R, Evers L J.  
-> *Interpretable and Granular Video-Based Quantification of Motor Characteristics from the Finger Tapping Test in Parkinson Disease.*  
-> arXiv e-prints, 2025 Jun: arXiv-2506.  
-> [📘 View on arXiv](https://arxiv.org/abs/2506.18925)
+> Zarrat Ehsan, T., Tangermann, M., Güçlütürk, Y., Shin, S., Ho, K. C., Bloem, B. R., & Evers, L. J. W.  
+> *Interpretable and Granular Video-Based Quantification of Motor Characteristics from the Finger-Tapping Test in Parkinson’s Disease.*  
+> **npj Parkinson’s Disease**, 2026.  
+> https://doi.org/10.1038/s41531-026-01307-w
 
 ---
 
 ## 📘 BibTeX
 
-@article{zarratehsan2025finger,
-  title={Interpretable and Granular Video-Based Quantification of Motor Characteristics from the Finger Tapping Test in Parkinson Disease},
-  author={Zarrat Ehsan, Tahereh and Tangermann, Michael and Güçlütürk, Yağmur and Bloem, Bastiaan R. and Evers, Luc J.W.},
-  journal={arXiv e-prints},
-  year={2025},
-  month={Jun},
-  eprint={2506.18925},
-  archivePrefix={arXiv}
+```bibtex
+@article{zarratehsan2026finger,
+  title = {Interpretable and Granular Video-Based Quantification of Motor Characteristics from the Finger-Tapping Test in Parkinson's Disease},
+  author = {Zarrat Ehsan, Tahereh and Tangermann, Michael and G{\"u}{\c{c}}l{\"u}t{\"u}rk, Ya{\u{g}}mur and Shin, S. and Ho, K. C. and Bloem, Bastiaan R. and Evers, Luc J. W.},
+  journal = {npj Parkinson's Disease},
+  year = {2026},
+  doi = {10.1038/s41531-026-01307-w}
 }
 
 ---
