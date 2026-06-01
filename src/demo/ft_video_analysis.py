@@ -252,16 +252,6 @@ class ft_video_analysis:
         
 if __name__ == "__main__":
 
-    
-    CONFIG = {
-        'video_path':  r'//chansey.umcn.nl/diag/Tahereh/Video/Visit 2/POM2VD3156615/On_2L_cropped_square_s.MP4',
-        'hand2track':'Left' #### Left or Right
-    }
-    
-    test = ft_video_analysis(CONFIG)
-    test.preprocess_and_display_video()
-
-
     import argparse
 
     parser = argparse.ArgumentParser(description="Finger Tapping Video Analysis")
