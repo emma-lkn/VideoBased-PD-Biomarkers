@@ -186,7 +186,6 @@ If you use this repository in your research, please cite:
   year = {2026},
   doi = {10.1038/s41531-026-01307-w}
 }
-
 ---
 
 ## 📜 License
