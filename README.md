@@ -64,7 +64,26 @@ pip install -r requirements.txt
 
 ---
 ## ▶️ Usage
-### 🔹 Part 1: Official Implementation
+### 🔹 Part 1: Easy Demo (Quick Video-to-Results)
+
+This demo offers a simple end-to-end example that runs the full analysis pipeline — from a raw video to automatic feature extraction and visualization.
+It can be executed locally without any dataset setup or preprocessing steps from the main implementation.
+
+📁 Script location
+    ```
+src/demo/ft_video_analysis.py
+    ```
+
+▶️ Run the demo
+```bash
+python ft_video_analysis.py --video_path "C:/Users/Tahereh/video.MP4" --hand2track Right
+```
+Arguments:
+    ```
+--video_path: Path to the input video file
+--hand2track: Which hand to analyze (Left or Right)
+    ```
+### 🔹 Part 2: Official Implementation
 #### 🔹 Keypoint Extraction
 
 If you want to build your own pickle file (`video_keypoints.pkl`) from raw videos, first prepare a CSV file with the following columns:
@@ -137,25 +156,6 @@ python src/training/optimization_training.py
 
 ---
 
-### 🔹 Part 2: Easy Demo (Quick Video-to-Results)
-
-This demo offers a simple end-to-end example that runs the full analysis pipeline — from a raw video to automatic feature extraction and visualization.
-It can be executed locally without any dataset setup or preprocessing steps from the main implementation.
-
-📁 Script location
-    ```
-src/demo/ft_video_analysis.py
-    ```
-
-▶️ Run the demo
-```bash
-python ft_video_analysis.py --video_path "C:/Users/Tahereh/video.MP4" --hand2track Right
-```
-Arguments:
-    ```
---video_path: Path to the input video file
---hand2track: Which hand to analyze (Left or Right)
-    ```
     
 ## 📥 Data Access
 
