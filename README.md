@@ -51,15 +51,10 @@ git clone https://github.com/TaherehZarratEhsan/VideoBased-PD-Biomarkers.git
 cd VideoBased-PD-Biomarkers
 ```
 
-### Option 1: Conda
+### Conda
 ```bash
 conda env create -f environment.yml
 conda activate mediapip_torch
-```
-
-### Option 2: pip
-```bash
-pip install -r requirements.txt
 ```
 
 ---
