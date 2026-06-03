@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 ---
 ## ▶️ Usage
-### 🔹 Part 1: Demo (video 2 motor quanitification)
+### 🔹 Part 1: Demo (video => motor quanitification)
 
 This demo offers a simple end-to-end example that runs the full analysis pipeline — from a raw video to automatic feature extraction and visualization.
 It can be executed locally without any dataset setup or preprocessing steps from the main implementation.
