@@ -6,6 +6,7 @@ This repository contains the official implementation of our paper:
 Tahereh Zarrat Ehsan, Michael Tangermann, Yağmur Güçlütürk, S. Shin, K. C. Ho, Bastiaan R. Bloem, Luc J. W. Evers  
 Radboud University, Donders Institute for Brain, Cognition and Behaviour
 
+**This repository was adapted by Emma Luisa Lakin for her AI Bachelor Thesis.**
 ---
 
 
