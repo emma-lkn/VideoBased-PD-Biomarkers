@@ -9,14 +9,6 @@ Radboud University, Donders Institute for Brain, Cognition and Behaviour
 **This repository was adapted by Emma Luisa Lakin for her AI Bachelor Thesis.**
 ---
 
-
-<p align="center">
-  <img src="assets/FT.gif" width="60%" />
-</p>
-
-<p align="center">
-  <img src="assets/LA.gif" width="60%" />
-</p>
 ## 📂 Repository Structure
 
 ```
@@ -31,11 +23,21 @@ Radboud University, Donders Institute for Brain, Cognition and Behaviour
 │ │ └── 📄 keypoint_extraction.py # Extracts hand keypoints using Mediapipe
 │ ├── 📁 feature_extraction/
 │ │ └── 📄 feature_extraction.py # Computes motor features (amplitude, speed, etc.)
-│ ├── 📁 training/
-│ │ └── 📄 optimization_training.py # Model training and evaluation scripts
-│ └── 📁 demo/
-│ └── 📄 ft_video_analysis.py # demo: video → features → plots
-│
+│ ├── 📁 helper_functions/
+│ │ └── 📄 models_functions.py
+│ │ └── 📄 helper_functions.py
+│ │ └── 📄 helper_plot_functions.py
+│ ├── 📁 model_analysis_notebooks/
+│ │ └── 📄 handedness.ipynb
+│ │ └── 📄 model_evaluation.ipynb
+│ │ └── 📄 models.ipynb
+│ │ └── 📄 pareto_fronts.ipynb
+│ │ └── 📄 raw_signal.ipynb
+│ │ └── 📄 sweep_number_comparison.ipynb
+│ │ └── 📄 sweep_type_comparison.ipynb
+│ │ └── 📄 updrs_vs_trial5.ipynb
+│ │ └── 📄 variability.ipynb
+│ │ └── 📄 visualisation.ipynb
 ├── 📄 environment.yml # Conda environment setup
 └── 📘 README.md # Project documentation
 ```
@@ -84,10 +86,10 @@ Arguments:
 If you want to build your own pickle file (`video_keypoints.pkl`) from raw videos, first prepare a CSV file with the following columns:
 
 - **video_path**: Full path to each video  
-- **score**: Clinical MDS‑UPDRS score 
+- **score**: Clinical MDS‑UPDRS score (put 0 here, as this is not used in the achelor thesis project
 - **id**: Patient ID  
 
-Save it in `data/raw/segmented_ft_vid2score.csv`.
+Save it in `data/raw/sat_finger_tapping.csv`.
 
 The Mediapipe hand landmark model is required to extract keypoints.  
 It will be automatically downloaded on first run from:
@@ -110,7 +112,9 @@ This will:
 - Process all listed videos using Mediapipe’s HandLandmarker  
 - Extract distance‑based signals 
 - Save a dictionary with `video_path`, `distance signal`, `keypoints`, `id`, `label`, and `fps`  
+- craete Participant folders with the name structure 00X in `data/raw`
 
+  
 The output will be stored in:
 
 ```
@@ -121,36 +125,16 @@ data/raw/video_keypoints.pkl
 After downloading keypoints (or generating) and placing `video_keypoints.pkl` in `data/raw/`, run:
 
 ```bash
-python src/feature_extraction/feature_extaction.py
+python src/feature_extraction/feature_extraction.py
 ```
 
 This will extract motor features (amplitude, speed, cycle duration, etc.) and generate:
 
 ```
-data/processed/combined_features.csv
+data/processed/finger_tapping_features.csv
 ```
-#### 🔹 Model Training and Evaluation
-
-Once you have extracted the features (`data/processed/combined_features.csv`), you can train and evaluate classification models.
-
-Run:
-
-```bash
-python src/training/optimization_training.py
-```
-
-- Saves:
-  - ** results** to:
-    ```
-    data/processed/dynamic_save.csv
-    ```
-  - ** plots of metrics with confidence intervals** to:
-    ```
-    data/processed/<model>_performance_metrics.png
-    ```
-
----
-
+#### 🔹 Feature Analysis for SAT in Finger Tapping
+After adjusting paths to the relevant .csv/.pkl files in the helper functions, the Juypter notebooks can be run for visualisation purposes.
     
 ## 📥 Data Access
 
